@@ -1,6 +1,9 @@
+<div align="center">
+
 # Skill 吸星大法
 
-> 分析、审查、对比和优化 Codex Skills 的方法型 Skill。适合用来拆解一个 Skill 为什么有效、哪里容易误触发、哪些行为模式值得吸收。
+分析、审查、对比和优化 Codex Skills 的方法型 Skill。  
+适合用来拆解一个 Skill 为什么有效、哪里容易误触发、哪些行为模式值得吸收。
 
 <p>
   <img src="https://img.shields.io/badge/Codex-Skill-blue" />
@@ -8,6 +11,8 @@
   <img src="https://img.shields.io/badge/language-中文-orange" />
   <img src="https://img.shields.io/badge/license-all_rights_reserved-lightgrey" />
 </p>
+
+</div>
 
 ## 它适合做什么
 
