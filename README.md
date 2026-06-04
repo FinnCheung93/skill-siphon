@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="./assets/readme/hero.svg" alt="Skill 吸星大法" />
-</p>
-
-<br>
-
 <div align="center">
 
 # Skill 吸星大法
@@ -45,21 +39,6 @@
 - 在正式改写前先形成清晰判断
 
 ## 🧩 工作流程
-
-```mermaid
-flowchart LR
-  A[输入 Skill] --> B{任务类型}
-  B -->|只有 source| C[分析结构与行为模式]
-  B -->|只有 target| D[质量审查]
-  B -->|source + target| E[提炼候选改法]
-  E --> F[采纳判断]
-  F --> G[整合建议]
-  D --> G
-  C --> G
-  G --> H{是否授权修改}
-  H -->|否| I[输出分析与计划]
-  H -->|是| J[应用修改]
-```
 
 <details>
 <summary>查看工作模式</summary>
