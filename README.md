@@ -11,10 +11,10 @@
 <br>
 
 <p>
-  <img src="https://img.shields.io/badge/Codex-Skill-2f81f7?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/version-v1.2.2-2ea043?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/language-中文-f0883e?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/license-all_rights_reserved-8b949e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat-square&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Version-v1.2.2-14b8a6?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat-square&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/Focus-Skill%20Review-7c3aed?style=flat-square" />
 </p>
 
 </div>
