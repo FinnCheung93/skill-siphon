@@ -1,68 +1,84 @@
+<p align="center">
+  <img src="./assets/readme/hero.svg" alt="Skill 吸星大法" />
+</p>
+
+<br>
+
 <div align="center">
 
 # Skill 吸星大法
 
 分析、审查、对比和优化 Codex Skills 的方法型 Skill。  
-适合用来拆解一个 Skill 为什么有效、哪里容易误触发、哪些行为模式值得吸收。
+把优秀 Skill 里的行为设计吸出来，再判断是否值得吸收。
+
+<br>
 
 <p>
-  <img src="https://img.shields.io/badge/Codex-Skill-blue" />
-  <img src="https://img.shields.io/badge/version-v1.2.2-green" />
-  <img src="https://img.shields.io/badge/language-中文-orange" />
-  <img src="https://img.shields.io/badge/license-all_rights_reserved-lightgrey" />
+  <img src="https://img.shields.io/badge/Codex-Skill-2f81f7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/version-v1.2.2-2ea043?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/language-中文-f0883e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/license-all_rights_reserved-8b949e?style=for-the-badge" />
 </p>
 
 </div>
 
-## 它适合做什么
+<br>
 
-- 分析一个 Skill 的触发条件、工作流、边界和风险
-- 对比多个 Skills，提炼可复用的行为设计模式
-- 审查一个目标 Skill 的质量，并给出优化建议
-- 从优秀 Skill 中提炼候选改法，但不直接照搬
-- 在正式改写前形成清晰的采纳清单和执行计划
+> [!NOTE]
+> Skill 吸星大法不是“复制 Skill”，而是先分析、再判断、最后才决定是否采纳或改写。
 
-## 什么时候使用
+## ✨ 能力地图
 
-当你想要认真研究一个 Skill，而不是简单复制它时，可以使用这个 Skill。
+| 能力 | 它会帮你看什么 |
+|---|---|
+| Skill 分析 | 触发条件、工作流、边界、风险 |
+| 质量审查 | 误触发、越权、过重、冗余 |
+| 模式提炼 | 从优秀 Skill 中抽取可复用行为设计 |
+| 采纳判断 | 形成候选改法、采纳清单和执行计划 |
 
-典型场景包括：
+## 🧭 适用场景
 
-- “帮我分析这个 Skill 为什么好用”
-- “参考 A Skill，看看 B Skill 能吸收什么”
-- “审查一下这个 Skill 有没有误触发、越权或过重的问题”
-- “帮我优化这个 Skill，但先不要改文件”
+- 研究一个 Skill 为什么好用
+- 对比多个 Skills 的行为设计
+- 审查目标 Skill 有没有误触发、越权或过重问题
+- 参考一个 Skill 优化另一个 Skill
+- 在正式改写前先形成清晰判断
 
-## 使用方式
+## 🧩 工作流程
 
-把本目录作为 Codex skill 安装或放入你的 skills 目录中。
-
-入口文件：
-
-```text
-SKILL.md
+```mermaid
+flowchart LR
+  A[输入 Skill] --> B{任务类型}
+  B -->|只有 source| C[分析结构与行为模式]
+  B -->|只有 target| D[质量审查]
+  B -->|source + target| E[提炼候选改法]
+  E --> F[采纳判断]
+  F --> G[整合建议]
+  D --> G
+  C --> G
+  G --> H{是否授权修改}
+  H -->|否| I[输出分析与计划]
+  H -->|是| J[应用修改]
 ```
 
-## 工作方式
-
-这个 Skill 会优先区分任务模式：
+<details>
+<summary>查看工作模式</summary>
 
 - 只有 source：做分析
 - 只有 target：做质量审查
 - 有 source 和 target：做候选提炼与采纳判断
 - 明确授权写文件：才进入修改模式
 
-它的重点是先判断、再建议、最后才执行，避免把“学习别人的 Skill”变成机械复制。
+</details>
 
-## 目录结构
+## 📦 使用方式
+
+把本目录作为 Codex skill 安装或放入你的 skills 目录中。
 
 ```text
-skill-siphon/
-  SKILL.md
-  agents/
-  references/
+SKILL.md
 ```
 
-## 授权说明
+## 🔒 授权说明
 
 No license is provided. All rights reserved.
