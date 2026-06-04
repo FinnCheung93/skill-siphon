@@ -1,0 +1,3 @@
+display_name: Skill Siphon
+short_description: Extract reusable skill patterns
+default_prompt: Analyze source skills or review a target skill, extract reusable patterns, and help decide what to adopt or improve through progressive adoption rounds.
