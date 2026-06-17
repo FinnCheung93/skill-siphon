@@ -9,12 +9,7 @@
 
 <br>
 
-<p>
-  <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat" />
-  <img src="https://img.shields.io/badge/Version-v1.2.2-14b8a6?style=flat" />
-  <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat" />
-  <img src="https://img.shields.io/badge/Focus-Skill%20Review-7c3aed?style=flat" />
-</p>
+<p><sub><code>Codex Skill</code> · <code>Version v1.2.2</code> · <code>Language 中文</code> · <code>Focus Skill Review</code></sub></p>
 
 </div>
 
