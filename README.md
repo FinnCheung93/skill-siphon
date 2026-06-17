@@ -10,9 +10,9 @@
 <br>
 
 <p>
-  <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Version-v1.2.2-14b8a6?style=flat&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat" />
+  <img src="https://img.shields.io/badge/Version-v1.2.2-14b8a6?style=flat" />
+  <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat" />
   <img src="https://img.shields.io/badge/Focus-Skill%20Review-7c3aed?style=flat" />
 </p>
 
