@@ -57,6 +57,12 @@
 - dry-run / validation / forward-testing。
 - 风险边界和 forbidden actions。
 - 多输入规模控制策略。
+- invocation 设计：model-invoked / user-invoked / router skill 的取舍。
+- information hierarchy：哪些内容是步骤，哪些是 reference，哪些被渐进式披露。
+- completion criteria：步骤是否有可检查、足够严格的完成标准。
+- leading words：是否用稳定概念压缩行为规则和触发条件。
+- pruning discipline：是否有删除无效、重复、沉积内容的机制。
+- failure modes：是否识别提前完成、重复、沉积、蔓延、无效指令。
 
 ## Risk Notes
 
@@ -78,6 +84,7 @@
 - Value：能解决 target 的什么真实问题。
 - Risk：会不会带来复杂度或边界问题。
 - Context Cost：是否显著增加 token 消耗。
+- Cognitive Cost：是否增加用户必须记住的调用负担。
 - Placement：应放入 `SKILL.md`、`references/`、template、checklist，还是不放。
 - Adoption Type：可直接采纳、需要改写、只作为 optional，或不建议采纳。
 
@@ -90,6 +97,9 @@
 - Trigger accuracy：description 是否包含触发词、使用条件、跳过条件。
 - Workflow control：步骤是否有进入条件、出口条件和失败处理。
 - Context economy：`SKILL.md` 是否过长，是否重复 references，是否默认加载过多材料。
+- Invocation economy：是否正确权衡 model-invoked 的上下文成本和 user-invoked 的用户记忆成本。
+- Information hierarchy：步骤、内联 reference、外部 reference 的位置是否合理。
+- Completion criteria：关键步骤是否有清楚、可检查、足够严格的完成标准。
 - Safety / confirmation gates：写文件、覆盖、安装、发布、不可逆操作是否需要确认。
 - Reference structure：references 是否由 `SKILL.md` 一层直接引用，是否存在深链。
 - Output discipline：输出格式是否稳定，是否会过度总结或机械罗列。

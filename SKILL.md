@@ -2,8 +2,8 @@
 name: skill-siphon
 description: Analyze, review, and improve Codex skills by extracting reusable patterns from source skills or applying skill-quality heuristics to a target skill. Use when the user wants to learn from another skill, compare multiple skills, optimize an existing skill, absorb patterns into a target skill, or create an adoption plan before modifying skill files.
 metadata:
-  version: v1.2.2
-  updated: 2026-06-04
+  version: v1.3.0
+  updated: 2026-06-22
 ---
 
 # Skill Siphon
@@ -49,6 +49,7 @@ metadata:
 
 - 分析 source：用 [source-analysis.md](references/source-analysis.md)。
 - 优化 target：用 [skill-quality.md](references/skill-quality.md)。
+- 审查 skill 设计质量、术语和失败模式：用 [skill-design-principles.md](references/skill-design-principles.md)。
 - 多 source：用 [multi-source.md](references/multi-source.md)。
 
 ### 3. Candidate Pool
@@ -74,12 +75,16 @@ metadata:
 
 涉及创建、重构或实质修改 skill 文件时，联动 `skill-creator` 做结构校验、`agents/openai.yaml` 同步和必要的 forward-testing；不要复制 `skill-creator` 的流程细节。
 
+用户要求独立审阅、subagent 审阅或 ReAct 审阅循环时，按 [review-loop.md](references/review-loop.md) 执行：先设定问题分级和完成目标，再让独立审阅者按 P0-P3 输出问题，优先收敛 P0/P1。
+
 ## Reference Loading
 
 - source 分析：`references/source-analysis.md`
 - skill 质量优化：`references/skill-quality.md`
+- skill 设计原则与失败模式：`references/skill-design-principles.md`
 - 多 source 控制：`references/multi-source.md`
 - adoption rounds：`references/adoption-rounds.md`
+- 独立审阅循环：`references/review-loop.md`
 - 输出格式：`references/output-templates.md`
 
 ## Completion Checklist
@@ -91,4 +96,5 @@ metadata:
 - adoption rounds 是否使用 `A/B/C/D`？
 - Final Summary 前是否完成 Integration Review？
 - 是否检查误触发、越权、过度加载、规则冲突和 target 过重？
+- 如用户要求独立审阅，是否按 P0-P3 收敛到无 P0/P1？
 - 如修改文件，是否说明路径并完成可用 validation？
